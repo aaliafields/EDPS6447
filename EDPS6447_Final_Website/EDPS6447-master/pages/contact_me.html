@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="style/style.css">
+    
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+   <script src="variable.js"></script>
+      
+    <title>Ms. Fields' Class Website</title>
+  </head>
+<html>
+<head>
+    
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*Change color while active*/
+    .topnav a.active {
+    background-color: #ddd;
+    color: black;
+    }   
+    
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Ms. Fields' Class Website</h1>
+</div>
+
+<div class="topnav">
+  <a id="view_home" href="index.html">Home</a>
+  <a id="view_class_newsfeed" href="class_newsfeed1.html">Class Newsfeed</a>
+  <a id="view_student_spotlight" href="student_spotlight.html">Student Spotlight</a>
+  <a id="view_activity_gallery" href="activity_gallery1.html">Activity Gallery</a>
+  <a id="view_contact_me" href="contact_me.html" style="float:right" class="active">Contact Me</a>
+</div>
+
+<div class="footer">
+  <h2><b>Contacting Ms. Fields</b></h2>
+<form id="contactform" class="form">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Name</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Example: Ms. Fields">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Reason for Contact</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option></option>
+      <option>Volunteering in Classroom</option>
+      <option>Homework or Academics Updates</option>
+      <option>Behavioral Updates</option>
+      <option>Afterschool Opportunities</option>
+      <option>Miscellaneous</option>
+      </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Questions, Comments, or Concerns</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+  </div>
+        
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Best Contact Method</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option></option>
+      <option>Text</option>
+      <option>Phone Call</option>
+      <option>Meeting in Person</option>
+      <option>E-mail</option>
+      <option>Skype</option>
+    </select>
+  </div>
+
+<div class="button">
+    <button type="submit" class="input_submit_button">Submit</button>
+</div>      
+      
+</form>
+
+<script src="js/variable.js"></script>
+<script src="js/listener.js"></script>
+<script src="js/router.js"></script>   
